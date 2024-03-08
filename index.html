@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>doxbin.online</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta property="og:title" content="doxbin.online">
+  <meta property="og:description" content="private bio hosting">
+  <meta property="og:url" content="doxbin.online">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#303135">
+  <meta property="og:image" content="https://s3.kythi.co/dev/uploads/195ed36c-b057-4d90-a30a-5a6a4c2006c9/fc9fe142-9091-48ae-99c7-221afce33675">
+  <!-- <script src="js/snowstorm.js"></script> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+  <script src="cosmin/js/disable_inspect.js"></script>
+  <script src="cosmin/js/disable-devtool.min.js"></script>
+  <script src="cosmin/js/funny.js"></script>
+
+  <style>
+    /* Define a CSS class for animating the color change */
+    @keyframes rainbow {
+      0% { color: red; }
+      20% { color: orange; }
+      40% { color: yellow; }
+      60% { color: green; }
+      80% { color: blue; }
+      100% { color: violet; }
+    }
+
+    /* Apply the animation to the ASCII art */
+    .rainbow-text {
+      animation: rainbow 5s infinite; /* Change the duration (5s) and iteration count (infinite) as needed */
+    }
+
+    /* Adjustments for the GIF */
+    .content {
+      position: relative;
+    }
+
+    .content img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      width: 18%; /* Make the width half of its original size */
+      height: auto; /* Maintain aspect ratio */
+      filter: grayscale(100%); /* Apply grayscale filter */
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div id="fullscreen-button">Enter</div>
+
+    <video autoplay muted loop id="video" style="display: none;">
+      <source src="drive.mp4" type="video/mp4">
+    </video>
+
+    <video autoplay muted loop id="video2" style="pointer-events: none; opacity: 0.6;">
+      <source src="grain.mp4" type="video/mp4">
+    </video>
+
+    <audio id="myAudio" autoplay loop>
+      <source src="s.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+
+    <script>
+      var video = document.getElementById('video2');
+      video.addEventListener('ended', function() {
+        video.currentTime = 0;
+        video.play();
+      });
+    </script>
+
+    <div class="content">
+      <!-- Replace the ASCII art with the GIF -->
+      <img src="https://cdn.discordapp.com/attachments/1215385812938784859/1215400275922124860/IAMGOD.gif?ex=65fc9cb6&is=65ea27b6&hm=e18280c06e038d6e51c528d3a8ee456ef3cf93336975c75d484b0c9fd56a36bf&" alt="GIF">
+      <pre class="pre2">
+        <div class="names">
+          <a class="name cosmin"><a href="/z">@Zbtw</a
+            <a class="name cosmin"><a href="https://cryp7ik.com/@k">@Kuna</a>
+        </div>
+      </pre>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
